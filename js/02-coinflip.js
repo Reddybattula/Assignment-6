@@ -1,10 +1,10 @@
 /*eslint-env browser*/
 
-var coinFlip = Math.round(Math.random() * 10);
+var coinFlip = Math.round(Math.random());
 var choice = window.prompt("Enter Heads or Tails");
 /*window.document.write("The flip was" + coinFlip + "<br>");*/
 if (choice == "Heads" || choice == "Tails") {
-    if (coinFlip <= 5) {
+    if (coinFlip === 0) {
         if (choice == "Heads") {
             window.document.write("The flip was heads and you chose heads...you win!");
         }
